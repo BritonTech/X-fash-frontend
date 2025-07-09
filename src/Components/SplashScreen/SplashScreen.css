@@ -1,0 +1,116 @@
+/* SplashScreen.css */
+.splash-screen {
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.logo-box {
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+  background-color: tomato;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.logo {
+  width: 100%;
+  height: 350px;
+  border-radius: 40px;
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.brand-name {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.tagline {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Reusable animation classes */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+/* .animated-gradient-border {
+  padding: 16px;
+  border: 4px solid transparent;
+  border-image: linear-gradient(270deg, #ff4e50, #f9d423, #ff4e50);
+  border-image-slice: 1;
+  animation: borderMove 6s ease infinite;
+  
+
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+  background-color: tomato;
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+} */
+
+/* @keyframes borderMove {
+  0% {
+    border-image-source: linear-gradient(270deg, #ff4e50, #f9d423, #ff4e50);
+  }
+
+  50% {
+    border-image-source: linear-gradient(90deg, #ff4e50, #f9d423, #ff4e50);
+  }
+
+  100% {
+    border-image-source: linear-gradient(270deg, #ff4e50, #f9d423, #ff4e50);
+  }
+} */
+
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}

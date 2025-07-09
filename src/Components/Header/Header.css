@@ -1,0 +1,88 @@
+.header{
+    height:28vw;
+    margin: 30px auto;
+    background: url('/public/banner_women.png') no-repeat;
+    background-size: contain;
+    position: relative;
+    gap: 2px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-bottom: -80px;
+    margin-top: 100px;
+
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    gap:1.1vw ;
+    max-width: 50%;
+    max-height: 50%;
+    bottom: 41%;
+    left: 6vw;
+    animation: ease-in-out fadeIn 3s, fadeOut 3s ;
+    row-gap: 0.5px;
+    border-radius: 3vh solid red;
+
+}
+.header-contents h2{
+    font-weight: 600;
+    color: white;
+    font-size: max(2.5vw,22px);
+    margin-bottom: auto;
+
+
+}
+.header-contents p{
+    color: white;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+.header-contents button{
+    border: none;
+    color: #747474;
+    font-weight: 600;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    height: 45px;
+    width: 158px;
+
+
+}
+.header-contents button:hover{
+    background-color: #febbb0;
+
+}
+@media(max-width:1050px){
+    
+    
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header{
+        width: 100%;
+        margin-top: -20px;
+        margin-bottom: 1px;
+    }
+    
+    .header-contents{
+        max-width: 65%;
+
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+         padding: 2vw 4vw;
+         width: 120px;
+         font-size: 12px;
+         height: 35px;
+    }
+}

@@ -1,0 +1,76 @@
+.place-order{
+    display: flex;
+    gap: 300px;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 100px;
+    
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+    cursor: pointer;
+}
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+
+
+}
+.place-order .cart-total button{
+    margin-top: 30px;
+    background-color: rgb(18, 175, 18);
+    border: none;
+    color: white;
+    width:max(15vw,200px) ;
+    border-radius: 9px;
+    cursor: pointer;
+    padding: 12px 0px;
+}
+.payment{
+    width: 190px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #f2e8e8;
+    color: rgb(53, 49, 32);
+    margin-bottom: -10px;
+    margin-top: 2px;
+    cursor: pointer;
+
+}
+.payment .options{
+    margin-left:4px;
+    
+}
+.type{
+    margin-top: 25px;
+}
+.error-message{
+    color: red;
+    font-size: 14px;
+    height: 25px;
+    margin-bottom: 5px;
+    border: #f2e8e8;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2e8e8;
+}
+

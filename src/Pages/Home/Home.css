@@ -1,0 +1,13 @@
+.home-welcome{
+    margin-top: 150px;
+    text-align: start;
+font-size: 80px;
+border: red 2px solid;
+padding-top: 90px;
+color: red;
+}
+.welcome-tex{
+    font-size: 50x;
+    color: red;
+    justify-content: flex-start;
+}

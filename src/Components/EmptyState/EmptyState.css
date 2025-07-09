@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  max-width: 100vw;
+}
+
+.empty-state {
+   box-sizing: border-box;
+  max-width: 100vw;
+  width: 100%;
+  height: 100%;
+  min-height:300px;
+  margin-top: -10px;
+
+  display: flex;
+   position: absolute;
+  flex-direction: column;
+  justify-content: center; /* ✅ Vertically center */
+  align-items: center;     /* ✅ Horizontally center */
+  
+  text-align: center;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+
+  background-color: transparent; /* or remove the red background */
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* padding: 20px; */
+}
+
+.empty {
+  width: 400px;
+  max-width: 100%;
+  height: 400px;
+  margin-top: -240px;
+  overflow: hidden;
+}
+.empty-state-text {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+
+  /* Gradient animation setup */
+  background: linear-gradient(
+    270deg,
+    tomato,
+    #ff00cc,
+    #3333ff,
+    #00ffff,
+    #33ff00,
+    #ffcc00,
+    #ff0000,
+    #ff00cc
+  );
+  background-size: 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-text-slide 10s ease infinite;
+}
+
+/* Keyframes for gradient movement */
+@keyframes gradient-text-slide {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+

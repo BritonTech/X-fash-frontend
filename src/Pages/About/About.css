@@ -1,0 +1,80 @@
+/* SplashScreen.css */
+.about-screen {
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in;
+  
+}
+
+.about-logo-box {
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+  animation-delay: 0.3s;
+  background-color: rgb(167, 174, 171);
+  width: 100%;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.about-logo {
+  width: 100%;
+  height: 350px;
+  border-radius: 40px;
+  animation: fadeSlideIn 1s ease forwards;
+}
+
+.about-brand-name {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.about-tagline {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #090505;
+  font-weight: 500;
+}
+
+/* Reusable animation classes */
+.fade-slide {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+.delay-2 {
+  animation-delay: 1s;
+}
+.delay-3 {
+  animation-delay: 2.5s;
+}
+.delay-4 {
+  animation-delay: 3.5s;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}

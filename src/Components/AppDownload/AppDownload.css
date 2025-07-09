@@ -1,0 +1,77 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 50px;
+    font-size: max(4vw,20px);
+    font-weight: 600;
+    justify-content: center; 
+    margin-bottom: -40px;
+    
+   
+}
+.app-dowload-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.app-download p{
+    justify-content: center;
+    margin-left: 40px;
+}
+.app-download-platforms{
+    display: flex;
+    justify-content: center;
+    gap: max(2vw,10px);
+    margin-top: 20px;
+}
+.app-download-platforms img{
+    width: 100px;
+    height: 35px;
+    border-radius: 9px;
+    max-width: 180px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.app-download-platforms img:hover{
+   transform: scale(1.19);
+}
+
+.app-download-text{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+
+  /* Gradient animation setup */
+  background: linear-gradient(
+    270deg,
+    tomato,
+    #ff00cc,
+    #3333ff,
+    #00ffff,
+    #33ff00,
+    #ffcc00,
+    #ff0000,
+    #ff00cc
+  );
+  background-size: 400% 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradient-text-slide 10s ease infinite;
+}
+
+/* Keyframes for gradient movement */
+@keyframes gradient-text-slide {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+
+

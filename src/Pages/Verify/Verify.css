@@ -1,0 +1,32 @@
+.verify{
+    min-height: 60vh;
+    display: grid;
+    margin-top: 100px;
+    flex: 1;
+    align-items: center;
+}
+.verify .spinner{
+    width: 400px;
+    position: relative;
+    height: 400px;
+    place-self: center;
+    border: 5px solid #bdbdbd;
+    border-top-color:blueviolet;
+    border-bottom-color:blueviolet;
+    border-radius: 50%;
+    animation:rotate 3s infinite ease-in-out 2s;
+
+}
+.logo-spinner{
+    position: absolute;
+    right: 460px;
+    font-size: 100px;
+    font-weight: 600;
+    align-items: center;
+    animation: rotate infinite 3s;
+}
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}

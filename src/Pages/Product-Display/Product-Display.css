@@ -1,0 +1,240 @@
+.product {
+    overflow-x: hidden;
+    margin-top: 4px;
+    width: 100%;
+
+}
+
+.item-display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.item-display h2 {
+    font-size: max(2vw, 24px);
+    font-weight: 600;
+
+}
+
+.item-display-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 19.9px;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+
+.back {
+    width: 30px;
+    height: 30px;
+}
+
+.search-icon {
+    width: 20px;
+    position: absolute;
+    right: 145px;
+    top: 20.9px;
+}
+
+.search-input {
+    position: relative;
+    width: 80vw;
+    height: 33px;
+    font: 28px;
+    border-radius: 50px;
+    padding-left: 22px;
+    color: rgb(20, 22, 27);
+    background-color: antiquewhite;
+    font-weight: 500px;
+    border: 1px solid rgb(4, 15, 11);
+
+}
+
+/* .category-filter{
+    position:flex ;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: max(1.4vw,16px);
+    font-weight: 500;
+    color: #020709;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-top: 10px; */
+
+/* }
+.category-select::-webkit-scrollbar {
+  display: none;                 /* Chrome, Safari */
+/* } */
+*/
+/* .category-name{
+    position: relative;
+    left: 10px;
+    font-size: max(1.4vw,16px);
+    font-weight: 500;
+    color: #020709;
+    cursor: pointer;
+    width: 250px;
+} */
+/* .category-select{
+    position: relative;
+    align-items: center;
+    padding-top: 12px;
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    /* background-color: rgb(187, 232, 227); */
+/* color: black;
+    font-size: max(1.4vw,16px);
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 20px;
+    appearance: none;
+   
+} */
+*/
+
+/* .category-select:hover{
+    background-color: rgb(201, 201, 204);
+
+} */
+.indicator {
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 25px;
+    top: -6px;
+    right: -6px;
+}
+
+.cart-cart-display {
+    position: relative;
+    width: 30px;
+    height: 30px;
+
+}
+
+.explore-menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    margin: 20px 0px;
+    overflow-x: scroll;
+
+}
+
+.explore-menu-list-item p {
+    margin-top: 5px;
+    color: #747474;
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.explore-menu-list-item .text-active {
+    color: rgb(68, 3, 3);
+    font-weight: 600;
+}
+
+
+
+/* Container for the category filter */
+.category-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+    gap: 10px;
+}
+
+/* Label styling */
+.category-name {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+/* Scrollable horizontal list */
+.horizontal-category-scroll {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.horizontal-category-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.horizontal-category-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Each category button/item */
+.category-item {
+    white-space: nowrap;
+    padding: 8px 16px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    color: #747474;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+/* Hover state */
+.category-item:hover {
+    background-color: #e0e0e0;
+}
+
+/* Selected/active category style */
+.category-item.selected {
+    background-color: tomato;
+    color: black;
+    border-color: #007bff;
+}
+
+/* Optional: Clear button */
+.clear-button {
+    padding: 6px 12px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.clear-button:hover {
+    background-color: #cc0000;
+}
