@@ -12,7 +12,7 @@ const ItemCard = ({ id, name, old_price, new_price, description, image, category
  {}   return (
       <div className='item-card'>
   {}          <div className="item-card-img-container">
-   {}             <img src={url+"/images/"+image || image} alt="" className="item-card-image" />
+   {}             <img src={image} alt="" className="item-card-image" />
 
                 {!cartItems[id]
                     ? <div className='item-card-add' onClick={() => addToCart(id)}>
