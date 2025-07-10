@@ -243,5 +243,15 @@
         cursor: pointer;
 
     }
+    .navbar .nav-logo {
+    width: 60px;
+    height: fit-content;
+
+
+
+
+
+
+}
 
 }
