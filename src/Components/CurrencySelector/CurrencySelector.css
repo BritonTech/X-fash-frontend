@@ -1,7 +1,7 @@
 .currency-selector-fixed {
   position: fixed;
   top: 80px;
-  right: 60px;
+  right: 40px;
   z-index: 9999;
   background-color: white;
   border: 1px solid #ccc;
@@ -28,4 +28,19 @@
   font-size: 14px;
   border-radius: 4px;
   border: 1px solid #ccc;
+}
+@media (max-width:750px){
+ .currency-selector-fixed {
+  position: fixed;
+  top: 50px;
+  right: 2px;
+  z-index: 9999;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ 
 }
