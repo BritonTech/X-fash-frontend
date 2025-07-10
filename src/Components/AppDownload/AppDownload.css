@@ -72,6 +72,19 @@
     background-position: 0% center;
   }
 }
+@media (max-width:750px){
+  .app-download-text{
+    font-size: 20px;
+  }
+  .app-download-platforms img{
+    width: 70px;
+    height: 28px;
+    border-radius: 8px;
+    max-width: 100px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+}
 
 
 

@@ -28,10 +28,10 @@ const LoginPopup = ({ }) => {
         event.preventDefault()
         let newUrl = url;
         if (currState === "Login") {
-            newUrl += "/api/user/login"
+          `${import.meta.env.VITE_API_URL}/user/login`
 
         } else {
-            newUrl += "/api/user/register"
+       `${import.meta.env.VITE_API_URL}/user/register`
         }
 
         const response = await axios.post(newUrl, data);

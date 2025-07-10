@@ -109,6 +109,10 @@
     
 }
 @media (max-width:750px) {
+    .footer{
+        border-top-left-radius:40px;
+        border-top-right-radius:40px;
+    }
     .footer-content{
         display: flex;
         flex-direction: column;
@@ -117,5 +121,12 @@
     .footer-copyright{
         text-align: center;
     }
+    .footer-logo{
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    display: none;
+}
+
     
 }

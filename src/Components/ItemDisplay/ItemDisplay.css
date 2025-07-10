@@ -103,3 +103,21 @@ margin-top: 30px;
     color: limegreen;
   }
 }
+@media (max-width:750px){
+  .products-header{
+    font-size: 40px;
+    gap: 20px;
+  }
+  .products-header button{
+    width: 70px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    height: 26px;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+    
+}
+}
