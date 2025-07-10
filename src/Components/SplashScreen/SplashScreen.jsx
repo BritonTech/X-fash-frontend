@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './SplashScreen.css';
 import logo from '../../Assets/banner_kids.png'
+import welcomeVideo from '../../Assets/welcome.mp4';
+
 
 const SplashScreen = ({ onFinish }) => {
   useEffect(() => {
@@ -13,9 +15,20 @@ const SplashScreen = ({ onFinish }) => {
   return (
     <div className="splash-screen">
       <div className="animated-gradient-border logo-box ">
-        <img src={logo} alt="Logo" className="logo fade-slide" />
-        <h1 className="brand-name fade-slide delay-1">MyFashion</h1>
-        <p className="tagline fade-slide delay-2">Elevating your style, one outfit at a time.</p>
+        <video
+          src={welcomeVideo}
+          className="welcome-logo fade-slide"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+{/* 
+        <h1 className="brand-name fade-slide delay-1 gradient-text">MyFashion</h1>
+        <p className="tagline fade-slide delay-2 gradient-text">
+          Elevating your style, one outfit at a time.
+        </p> */}
+
       </div>
     </div>
   );
