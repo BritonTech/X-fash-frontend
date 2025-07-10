@@ -44,7 +44,7 @@ console.log("carouselImages", carouselImages);
       <AnimatePresence>
         <motion.img
           key={carouselImages[current]._id}
-          src={`${url}/images/${carouselImages[current].image}`}
+          src={carouselImages[current].image}
           initial={{ opacity: 0, x: 300 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -300 }}

@@ -14,7 +14,7 @@ export const ExploreMenu = ({category,setCategory}) => {
                 menu_list.map((item,index)=>{
                     return(
                         <div onClick={()=>setCategory(prev=>prev===item.category?"All":item.category)} key={index} className='explore-menu-list-item'>
-                            <img className={category===item.category?"active":""} src={`${url}/images/${item.image}`} alt={item.category } />
+                            <img className={category===item.category?"active":""} src={item.image} alt={item.category } />
                             <p className={category===item.category?"text-active":""}>{item.category}</p>
 
                         </div>
