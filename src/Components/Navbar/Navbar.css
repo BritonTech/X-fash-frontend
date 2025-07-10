@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 100%;
+    /* width: 100%; */
     top: 0;
     transition: top 0.3s;
     z-index: 999;
@@ -16,7 +16,15 @@
     border-bottom-right-radius: 20px;
     border: 1px solid rgb(92, 82, 82);
     /* gap: 20px; */
+    left: 0;
+    right: 0;
+    width: 100vw;
+    /* Force full viewport width */
+    box-sizing: border-box;
 }
+
+
+
 
 .navbar--hidden {
     top: -60px;
@@ -268,14 +276,16 @@
         width: 90px;
         height: fit-content;
     }
-      .navbar-right {
+
+    .navbar-right {
         gap: 15px;
     }
-    .navbar .logo-profile {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
 
-}
+    .navbar .logo-profile {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+
+    }
 
 }
