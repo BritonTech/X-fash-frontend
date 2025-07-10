@@ -76,7 +76,7 @@ export const Cart = () => {
               if (getTotalCartAmount() > 0) {
                 return ( */}
             <div className='button-action'>
-              <button onClick={() => getTotalCartAmount() >0 ? navigate('/order') : ""} className='cart-click'>PROCEED TO CHECKOUT</button>
+              <button onClick={() => getTotalCartAmount() >0 ? navigate('/order') : ""} className='cart-click'> CHECKOUT</button>
               {/* <button onClick={() => navigate('/order')} className='cart-click'>PROCEED TO CHECKOUT</button> */}
 
               <Link to='/products' ><button className="cart-click-add">ADD ITEMS</button></Link>

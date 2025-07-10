@@ -141,5 +141,54 @@
     .cart-promocode{
         justify-content: start;
     }
+    .cart-click{
+    border: none;
+    color: white;
+    width: 120px;
+    background-color: rgb(14, 213, 60);
+    /* width:max(12vw,150px) ; */
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 12px 0px;
+    margin-left: 30px;
+}
+.button-action{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 1px;
+}
+.cart-click-add{
+    border: none;
+    color: white;
+    background-color: rgb(220, 43, 4);
+    /* width:max(12vw,200px) ; */
+    border-radius: 8px;
+    width: 120px;
+    cursor: pointer;
+    padding: 12px 0px;
+    margin-left:60px;
+}
+.cart-promocode-input button{
+    /* width:max(10vw,150px); */
+    padding: 10px 3px;
+    width: 100px;
+    background-color: black;
+    border: none;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+
+}
+.cart-promocode-input input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 1px;
+    margin-left: 5px;
+    font-weight: 6OO;
+    font-size: 16px;
+
+}
     
 }

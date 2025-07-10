@@ -46,8 +46,8 @@ const Footer = () => {
 
                 </div>
                  <div className="footer-content-left">
-                    <Link to='/'><img src={assets.logo} className='footer-logo' alt="" /></Link>
-                    <p>Access our social media platforms for more elegant designs and for efficient communication and clarifications .</p>
+                    {/* <Link to='/'><h2 className='footer-logo' ></h2>X-Fash</Link> */}
+                    {/* <p>Access our social media platforms for more elegant designs and for efficient communication and clarifications .</p> */}
                     <div className="footer-social-icons">
                         <img src={assets.twitter} alt="" className='social-icons' />
                         <img src={assets.tiktok} alt="" className='social-icons' />

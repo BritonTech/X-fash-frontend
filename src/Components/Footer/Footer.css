@@ -97,9 +97,8 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .footer-logo{
-    width: 180px;
-    height: 80px;
-    border-radius: 30px;
+   
+    font-size: 200px;
 }
 .reach{
     display: flex;
@@ -112,20 +111,20 @@
     .footer{
         border-top-left-radius:40px;
         border-top-right-radius:40px;
+        gap: 1px;
     }
     .footer-content{
         display: flex;
         flex-direction: column;
-        gap: 35px;
+        gap: 10px;
     }
     .footer-copyright{
         text-align: center;
     }
     .footer-logo{
-    width: 100px;
-    height: 40px;
-    border-radius: 30px;
-    display: none;
+    /* display: none; */
+    font-size: 100px;
+    color: #d9d9d9;
 }
 
     
