@@ -45,7 +45,7 @@
   width: 100%;
 }
 
-.App {
+.app {
   text-align: center;
   
   padding-top: 0%;
@@ -55,8 +55,10 @@
   border-radius: 50px;
   margin-bottom: 60px;
   height:100px;
+  min-width: 98%;
   min-height: 100vh;
   display: flex;
+  overflow-y:visible;
   
 
 }

@@ -1,14 +1,14 @@
-.navbar{
+.navbar {
     padding: 20px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    width: 90%;
+    width: 98%;
     top: 0;
     transition: top 0.3s;
     z-index: 999;
-    background-color:rgb(251, 56, 56);
+    background-color: rgb(251, 56, 56);
     padding-bottom: 20px;
     max-height: 80px;
     gap: 50px;
@@ -17,14 +17,17 @@
     border: 1px solid rgb(92, 82, 82);
     /* gap: 20px; */
 }
-.navbar--hidden{
+
+.navbar--hidden {
     top: -60px;
 }
-.navbar--visible{
+
+.navbar--visible {
     top: 0;
 }
-.navbar-menu{
-   
+
+.navbar-menu {
+
     padding: 2px;
     gap: 20px;
     list-style: none;
@@ -32,23 +35,26 @@
     color: white;
     font-size: 18px;
     width: 550px;
-        
+
 }
-.abc{
+
+.abc {
     text-underline-offset: none;
     text-decoration: none;
     color: white;
-    
-    
-    
+
+
+
 }
-.navbar-right{
+
+.navbar-right {
     display: flex;
     gap: 20px;
     padding: auto;
     align-items: center;
 }
-.navbar .nav-logo{
+
+.navbar .nav-logo {
     width: 190px;
     height: fit-content;
     position: flex-start;
@@ -57,25 +63,28 @@
     padding-bottom: 2px;
 
 
-    
 
 
-}
-.navbar .logo-right{
-     width: 30px;
-     height: 30px;
-     cursor: pointer;
 
 }
-.navbar .logo-profile{
-     width: 45px;
-     height: 50px;
-     cursor: pointer;
+
+.navbar .logo-right {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 
 }
-.navbar button{
-    background:transparent ;
-    font-size:16px ;
+
+.navbar .logo-profile {
+    width: 45px;
+    height: 50px;
+    cursor: pointer;
+
+}
+
+.navbar button {
+    background: transparent;
+    font-size: 16px;
     color: white;
     border: 1px solid tomato;
     padding: 10px 30px;
@@ -84,28 +93,32 @@
     transition: 0.3s;
 
 }
-.navbar button:hover{
+
+.navbar button:hover {
     background-color: #f72b08;
 
 }
-.navbar .active{
+
+.navbar .active {
     padding-bottom: -4px;
-    
+
     border-bottom: -6px solid;
-    
+
     color: rgb(40, 10, 238);
     font-weight: 500;
-    
+
 }
-.navbar-search-icon{
+
+.navbar-search-icon {
     position: relative;
 
 }
-.navbar-search-icon .dot{
+
+.navbar-search-icon .dot {
     position: absolute;
     min-width: 10px;
     min-height: 10px;
-    background-color:white;
+    background-color: white;
     border-radius: 25px;
     top: -8px;
     right: -8px;
@@ -113,25 +126,29 @@
 
 
 }
-.navbar hr{
 
-     margin: 10px 0px;
+.navbar hr {
+
+    margin: 10px 0px;
     height: 2px;
     background-color: #ecb1b1;
     border: none;
     position: absolute;
     top: 90px;
 }
-.navbar-profile{
+
+.navbar-profile {
     position: relative;
 }
-.nav-profile-dropdown{
+
+.nav-profile-dropdown {
     position: absolute;
     display: none;
     right: 0;
     z-index: 1;
 }
-.navbar-profile:hover .nav-profile-dropdown{
+
+.navbar-profile:hover .nav-profile-dropdown {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -143,64 +160,88 @@
     list-style: none;
 
 }
-.nav-profile-dropdown li{
+
+.nav-profile-dropdown li {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
     list-style: none;
 }
-.nav-profile-dropdown img{
+
+.nav-profile-dropdown img {
     width: 20px;
 }
-.nav-profile-dropdown li:hover{
+
+.nav-profile-dropdown li:hover {
     color: tomato;
 }
 
-@media (max-width:1050px){
-    .navbar .logo{
+@media (max-width:1050px) {
+    .navbar .logo {
         width: 140px;
     }
-    .navbar-menu{
+
+    .navbar-menu {
         gap: 20px;
         font-size: 17px;
     }
-    .navbar-right{
+
+    .navbar-right {
         gap: 30;
     }
-    .navbar-right img{
+
+    .navbar-right img {
         width: 22px;
 
     }
-    .navbar-right button{
+
+    .navbar-right button {
         padding: 8px 25px;
     }
 }
-@media (max-width:900px){
-    .navbar .logo{
+
+@media (max-width:900px) {
+    .navbar .logo {
         width: 120px;
     }
-    .navbar-menu{
+
+    .navbar-menu {
         gap: 15px;
         font-size: 17px;
     }
-    .navbar-right{
+
+    .navbar-right {
         gap: 20;
     }
-    .navbar-right img{
+
+    .navbar-right img {
         width: 20px;
 
     }
-    .navbar-right button{
+
+    .navbar-right button {
         padding: 7px 20px;
         font-size: 15px;
     }
 }
-@media (max-width:750px){
-    
-    
-    .navbar-menu{
+
+@media (max-width:750px) {
+
+
+    .navbar-menu {
         display: none;
     }
-  
+
+    .navbar .logo {
+        width: 60px;
+    }
+
+    .navbar .logo-right {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+
+    }
+
 }
