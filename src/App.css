@@ -42,7 +42,7 @@
 } */
  /* Target the scrollbar */
 ::-webkit-scrollbar {
-  width: 2px; /* Change this to make it narrower */
+  width: 1px; /* Change this to make it narrower */
 }
 
 /* Optional: Customize scrollbar track */
