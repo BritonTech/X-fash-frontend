@@ -43,7 +43,8 @@
  */
 
  .search-bar-wrapper {
-  position: relative;
+  position: fixed;
+  top: 2px;
   width: 96vw;
 
 }
@@ -81,7 +82,7 @@
 @media (max-width:750px){
   .search-input {
   width: 100%;
-  height: 33px;
+  height: 36px;
   font-size: 16px;
   border-radius: 50px;
   padding: 0 10px 0 12px;
@@ -91,6 +92,7 @@
   border: 1px solid rgb(4, 15, 11);
    outline: none;
   transition: all 0.3s ease;
+  
 }
 .search-icon {
   position: absolute;
