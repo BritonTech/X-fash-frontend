@@ -285,9 +285,16 @@
 
 
 /* Slide-in sidebar on mobile */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
   .sidebar-toggle {
     display: block;
+    top: 2px;
+    left: 10px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    /* padding-bottom: -10px; */
   }
 
   .chat-sidebar {
