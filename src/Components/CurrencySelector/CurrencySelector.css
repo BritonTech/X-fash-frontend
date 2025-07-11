@@ -37,10 +37,21 @@
   z-index: 9999;
   background-color: white;
   border: 1px solid #ccc;
-  padding: 5px;
+  padding: 1px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, opacity 0.3s ease;
+}
+/* When visible (scrolling up) */
+.selector--visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* When hidden (scrolling down) */
+.selector--hidden {
+  transform: translateY(10px); /* Push it out of view */
+  opacity: 0;
 }
  
 }
