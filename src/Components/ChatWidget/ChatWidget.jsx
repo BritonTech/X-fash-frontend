@@ -69,7 +69,7 @@ const ChatWidget = () => {
       // Open WhatsApp if needed
       if (response.toLowerCase().includes('whatsapp')) {
         setTimeout(() => {
-          window.open('https://wa.me/254740935676?text=Hello%20I%20have%20been%20redirected%20to%20you%20by%20X-Fash%20Shopping%20Assistance', '_blank');
+          window.open('https://wa.me/254740935676?text=Hello👋%20I%20have%20been%20redirected%20to%20you%20by%20X-Fash%20Shopping%20Assistance', '_blank');
         }, 1500);
       }
     }, 3000); // Wait 3 seconds before showing bot response
