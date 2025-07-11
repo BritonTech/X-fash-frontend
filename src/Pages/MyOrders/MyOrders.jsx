@@ -16,7 +16,7 @@ const MyOrders = () => {
     const fetchOrders = async () => {
         try {
             const response = await axios.post(
-                url + "/api/order/userorders",
+               `${import.meta.env.VITE_API_URL}/order/userorders`,
                 {},
                 { headers: { token } }
             );
