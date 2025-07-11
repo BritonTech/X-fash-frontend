@@ -348,6 +348,7 @@
 
   .chat-main {
     height: calc(100vh - 60px); /* Adjust for sidebar height */
+    width: 100vw;
   }
 
   .chat-input-bar {
