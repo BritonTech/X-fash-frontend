@@ -98,3 +98,12 @@
     }
     
 }
+@media(max-width:750px){
+    .explore-menu h1{
+    color: #262626;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 25px;
+
+}
+}

@@ -7,7 +7,7 @@ export const ExploreMenu = ({category,setCategory}) => {
     const {menu_list,url}= useContext(StoreContext);
   return (
     <div className='explore-menu' id='explore-menu'>
-        <h1>Explore our menu</h1>
+        <h1 >Explore our Categories</h1>
         {/* <p className='explore-menu-text'>Choose from a diverse menu featuring a delectable array of outfits crafted with the finest fabrics and culinary experties. Our mission is to satisfy your lust, desire and elevate your dress-code experience, one perfect design at a time. Scroll on the categories to explore more stunning designs.</p> */}
         <div className="explore-menu-list">
             {
