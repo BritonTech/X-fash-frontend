@@ -32,7 +32,7 @@ const Carousel = () => {
   if (!carouselImages || carouselImages.length === 0) {
     return <div className="carousel-loading">Loading Carousel...</div>;
   }
-console.log("carouselImages", carouselImages);
+  console.log("carouselImages", carouselImages);
 
   return (
     <div
@@ -50,6 +50,13 @@ console.log("carouselImages", carouselImages);
           exit={{ opacity: 0, x: -300 }}
           transition={{ duration: 2.5 }}
           className="carousel-image"
+          style={{
+            width: "100%",           // make it responsive to container
+            height: "auto",          // keep aspect ratio
+            objectFit: "cover",      // or "contain", depending on your goal
+            borderRadius: "12px",    // optional
+            maxHeight: "400px"       // or any limit you'd like
+          }}
         />
       </AnimatePresence>
 
