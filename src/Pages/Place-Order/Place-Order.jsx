@@ -113,7 +113,7 @@ export const PlaceOrder = () => {
     };
 
     try {
-      const response = await axios.post(`${url}/api/order/place`, orderData, {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/order/place`, orderData, {
         headers: { token }
       });
 
