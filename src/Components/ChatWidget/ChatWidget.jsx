@@ -94,8 +94,8 @@ const ChatWidget = () => {
       {/* Chat Box */}
       {isOpen && (
         <div className="chat-widget">
-          <div className="chat-header">
-            <h2>X-Fash Assistant</h2>
+          <div className="chat-widget-header">
+            <h2>X-Fash Shop Assistant</h2>
             <button onClick={toggleChat} className="close-btn">❌</button>
           </div>
 

@@ -28,12 +28,12 @@
   z-index: 9999;
 }
 
-.chat-header {
-  background: green;
-  color: rgb(7, 88, 27);
+.chat-widget-header {
+  background: rgb(230, 238, 230);
+  color: rgb(14, 193, 59);
   padding: 10px;
   font-weight: 600;
-  font-size: 90px;
+  font-size: px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,7 +173,7 @@
   right: 2px;
   width: 100vw;
   /* height: 485px; */
-  height: 80vh;
+  height: 72vh;
   background: rgb(246, 242, 242);
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
@@ -181,5 +181,22 @@
   flex-direction: column;
   overflow: hidden;
   z-index: 9999;
+}
+.chat-widget-header {
+  background: rgb(229, 238, 229);
+  color: rgb(7, 88, 27);
+  padding: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
 }
 }
