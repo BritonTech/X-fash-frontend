@@ -440,7 +440,7 @@ const ChatPage = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const res = await axios.get(`${url}/api/user/all`, {
+                const res = await axios.get(`${import.meta.env.VITE_API_URL}/user/all`, {
                     headers: {
                         token,
                     },
@@ -493,7 +493,7 @@ const ChatPage = () => {
             return updated;
         });
 
-        const res = await axios.get(`${url}/api/message/${user._id}/${chatUser._id}`);
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/message/${user._id}/${chatUser._id}`);
         setMessages(res.data.messages);
     };
 
@@ -511,7 +511,7 @@ const ChatPage = () => {
                 setUploading(true);
                 setUploadProgress(0);
 
-                const uploadRes = await axios.post(`${url}/api/message/upload`, formData, {
+                const uploadRes = await axios.post(`${import.meta.env.VITE_API_URL}/message/upload`, formData, {
                     headers: {
                         "Content-Type": "multipart/form-data",
                         token,
