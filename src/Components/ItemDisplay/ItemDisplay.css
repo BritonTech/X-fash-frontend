@@ -106,14 +106,18 @@ margin-top: 30px;
 @media (max-width:750px){
   .products-header{
     font-size: 40px;
+    justify-content: space-between;
     gap: 20px;
+    padding-right: 6px;
+    margin-top: 10px;
+    margin-bottom: -8px;
   }
   .products-header button{
-    width: 70px;
+    width: 76px;
     cursor: pointer;
     border-radius: 8px;
     border: none;
-    height: 26px;
+    height: 28px;
     background-color: antiquewhite;
     color: black;
     font-weight: 500;
