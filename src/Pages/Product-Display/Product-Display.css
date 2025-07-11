@@ -262,10 +262,14 @@
 
 }
 .horizontal-category-scroll{
-    width: 98vw;
+    /* width: 100vw; */
+    
     margin-bottom: 1px;
     margin-top: 68px;
     /* justify-content: center; */
     /* align-items: center; */
+}
+.category-filter{
+    width: 100vw;
 }
 }
