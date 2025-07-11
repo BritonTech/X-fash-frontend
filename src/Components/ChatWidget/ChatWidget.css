@@ -1,14 +1,14 @@
 .chat-icon-button {
   position: fixed;
   bottom: 20px;
-  right: 60px;
+  right: 2px;
   z-index: 9999;
   background: green;
-  color: white;
+  color: rgb(252, 248, 248);
   font-size: 24px;
   border: none;
   border-radius: 50%;
-  padding: 12px 16px;
+  padding: 12px 14px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
@@ -16,7 +16,7 @@
 .chat-widget {
   position: fixed;
   bottom: 20px;
-  right: 60px;
+  right: 2px;
   width: 320px;
   height: 485px;
   background: rgb(246, 242, 242);
@@ -70,6 +70,7 @@
 .message.bot {
   background: #eee;
   align-self: flex-start;
+  text-align: left;
 }
 
 .message.user {
@@ -150,4 +151,34 @@
     transform: scale(1.5);
     opacity: 1;
   }
+}
+@media (max-width:750px){
+  .chat-icon-button {
+  position: fixed;
+  bottom: 20px;
+  right: 2px;
+  z-index: 9999;
+  background: green;
+  color: rgb(252, 248, 248);
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  padding: 8px 10px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 2px;
+  width: 100vw;
+  height: 485px;
+  background: rgb(246, 242, 242);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 9999;
+}
 }
