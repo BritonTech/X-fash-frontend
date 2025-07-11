@@ -75,6 +75,15 @@
 @media (max-width:750px){
   .app-download-text{
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    text-align: center;
+  }
+  .app-dowload-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   .app-download-platforms img{
     width: 70px;
