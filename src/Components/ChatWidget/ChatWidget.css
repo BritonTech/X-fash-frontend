@@ -169,10 +169,11 @@
 }
 .chat-widget {
   position: fixed;
-  bottom: 20px;
+  bottom: 0px;
   right: 2px;
   width: 100vw;
-  height: 485px;
+  /* height: 485px; */
+  height: 80vh;
   background: rgb(246, 242, 242);
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
