@@ -456,7 +456,10 @@ const ChatPage = () => {
     }, [user, token, url]);
 
     useEffect(() => {
-        socketRef.current = io(url);
+        socketRef.current = io(import.meta.env.VITE_SOCKET_URL || url, {
+            transports: ["websocket"], // Ensure WebSocket transport
+        });
+
         if (user?._id) socketRef.current.emit("add-user", user._id);
 
         socketRef.current.on("online-users", (users) => {
@@ -709,7 +712,7 @@ const ChatPage = () => {
                             <div className="audio-controls">
                                 {status !== "recording" ? (
                                     <button onClick={startRecording} className="audio-input">
-                                        <img src={assets.microphone} alt="" className="mic"/>
+                                        <img src={assets.microphone} alt="" className="mic" />
                                     </button>
                                 ) : (
                                     <button onClick={stopRecording}>⏹️</button>
