@@ -5,6 +5,7 @@ import { assets } from '../../Assets/assets';
 import axios from 'axios';
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar';
+import Price from '../../Components/Price/Price';
 const MyOrders = () => {
     const { url, token } = useContext(StoreContext);
     const [data, setData] = useState([]);
@@ -76,7 +77,8 @@ const MyOrders = () => {
                                         : `${item.name} x ${item.quantity}, `
                                 )}
                             </p>
-                            <p>Ksh {order.amount}.00</p>
+                            
+                            <p><Price amountInKES={order.amount} /></p>
                             <p>Items: {order.items.length}</p>
                             <p><span>&#x25cf;</span> <b>{order.status}</b></p>
                             <button onClick={fetchOrders}>Track Orders</button>
