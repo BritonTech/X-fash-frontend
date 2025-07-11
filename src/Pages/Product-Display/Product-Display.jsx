@@ -191,18 +191,17 @@ const AllProductDisplay = () => {
     return (
         <div className='product'>
             <div className="product-header">
-                <Link to='/'><img src={assets.home} alt="Back" className="back" /></Link>
+                {/* <Link to='/'><img src={assets.home} alt="Back" className="back" /></Link> */}
                 <SearchBar
                     allProducts={all_product}
                     onSearchResults={setFilteredProducts}
                     clearSignal={clearSignal}
                 />
-                <div className='navbar-search-icon'>
+                {/* <div className='navbar-search-icon'>
                     <Link to='/cart'><img src={assets.cart_icon} alt="Cart" className='cart-cart-display' /></Link>
-                    {/* <div className={getTotalCartAmount() === 0 ? "" : "indicator"}></div> */}
                     <div className={getTotalCartAmount() === 0 ? "" : "dot"}></div>
 
-                </div>
+                </div> */}
             </div>
 
             <div className="category-filter">
