@@ -144,7 +144,7 @@
     flex-direction: column;
     /* grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); */
     margin-top: 2px;
-    gap: 2px;
-    column-gap: 5px;
+    /* gap: 2px; */
+    column-gap: 1px;
   }
 }
