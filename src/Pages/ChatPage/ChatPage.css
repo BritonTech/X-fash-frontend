@@ -374,9 +374,10 @@
     align-items: center;
     /* width:calc(100% - 250px); */
     min-width: 100vw;
-    gap: 1px;
+    gap: 2px;
     position: absolute;
-    padding: 1px;
+    padding: 4px;
+    right: 3px;
     background-color: #f6ebeb;
     border-top: 1px solid #f19898;
     bottom: 2px;
@@ -390,10 +391,11 @@
 
   .text-input {
     flex: 1;
-    padding: 7px;
+    height: auto;
+    padding: 8px;
     border-radius: 8px;
     border: 1px solid #ccc;
-    font-size: 13px;
+    font-size: 15px;
   }
 
   .send-btn {
