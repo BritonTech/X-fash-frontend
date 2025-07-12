@@ -225,9 +225,12 @@
     /* font-size:2px ; */
     grid-template-columns: 1fr 2fr 1fr;
     gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
  }
  .item{
     width: 40px;
-    height: 40px;
+    height: 50px;
  }
 }
