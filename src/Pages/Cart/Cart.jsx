@@ -22,6 +22,7 @@ export const Cart = () => {
 
       <div className='cart'>
         <div className="cart-items">
+          <h2>My Cart Items</h2>
           <div className="cart-items-title">
             <p className='title'>Items</p>
             <p className='title'>Title</p>
