@@ -30,7 +30,7 @@
   margin-bottom: 2px;
   background-color: #dcf8c6;
   width: 100%;
-  
+
 }
 
 
@@ -111,15 +111,33 @@
   background-color: #ffffff;
   word-break: break-word;
 }
+/* .message-bubble {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  column-gap: 6px;
+  font-size: 14px;
+    word-break: break-word;
+
+} */
 
 .message-bubble.sent {
   background-color: #dcf8c6;
   margin-left: auto;
+  text-align: right;
+  align-self: flex-end;
+
 }
 
 .message-bubble.received {
   background-color: #fff;
   margin-right: auto;
+  text-align: left;
+  align-self: flex-start;
+
 }
 
 .chat-image {
