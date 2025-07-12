@@ -25,10 +25,14 @@
 }
 
 .chat-sidebar h2 {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 10px;
+  font-size: 28px;
+  color: #048b1f;
+  margin-bottom: 2px;
+  background-color: #dcf8c6;
+  width: 100%;
+  
 }
+
 
 .chat-user {
   padding: 10px;
