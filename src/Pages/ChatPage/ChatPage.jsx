@@ -496,8 +496,14 @@ const ChatPage = () => {
             return updated;
         });
 
-        const res = await axios.get(`${import.meta.env.VITE_API_URL}/message/${user._id}/${chatUser._id}`);
-        setMessages(res.data.messages);
+        try {
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/message/${user._id}/${chatUser._id}`);
+            setMessages(res.data.messages);
+        } catch (error) {
+            console.error("⚠️ Failed to fetch messages:", error.message);
+            setMessages([]); // Prevent crash if 404
+        }
+
     };
 
     const sendMessage = async () => {
