@@ -92,6 +92,7 @@
   font-size: 12px;
   padding: 2px 6px;
   border-radius: 12px;
+  justify-items: flex-end;
   /* margin-left: 8px; */
   /* position: relative; */
   /* top: 8px; */
