@@ -185,6 +185,7 @@
   /* space for input */
   display: flex;
   flex-direction: column;
+  column-gap: 6px;
   align-items: flex-start; /* This keeps received messages to the left by default */
 
 }
