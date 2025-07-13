@@ -206,7 +206,8 @@
   background-color: #ffffff;
   word-break: break-word;
   overflow-wrap: break-word;
-  white-space: pre-wrap;          /* Allows line breaks */
+  white-space: pre-wrap;
+  column-gap:6px;          /* Allows line breaks */
 }
 
 
