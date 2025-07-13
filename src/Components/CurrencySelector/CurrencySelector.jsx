@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CurrencyContext } from '../../Context/CurrencyContext';
 import './CurrencySelector.css';
+import { useLocation } from "react-router-dom";
 
 const currencies = [
   { code: 'KES', name: 'Kenyan Shilling', flag: '🇰🇪' },

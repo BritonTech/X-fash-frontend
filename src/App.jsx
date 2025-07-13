@@ -25,6 +25,9 @@ const App = () => {
   const [showSplash, setShowSplash] = useState(true);
   const location = useLocation();
   const navigate = useNavigate();
+  const pagesWithCurrency = ["/","/products","/orders","/checkout", "/cart", "/confirm"];
+  const showCurrencySelector = pagesWithCurrency.includes(location.pathname);
+
 
   useEffect(() => {
     if (location.pathname === '/') {
@@ -46,7 +49,8 @@ const App = () => {
         <SplashScreen />
       ) : (
         <div className='app'>
-          <CurrencySelector /> {/* 💰 Always visible, fixed on screen */}
+          {showCurrencySelector && <CurrencySelector />}
+
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/cart' element={<Cart />} />
