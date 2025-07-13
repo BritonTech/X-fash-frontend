@@ -229,7 +229,7 @@
 .message-bubble.sent {
   background-color: #dcf8c6;
   margin-left: auto;
-  text-align: right;
+  text-align: left;
   align-self: flex-end;
 
 }
@@ -447,10 +447,7 @@
     left: 0;
   }
 
-  .chat-main {
-    /* margin-top: 40px; */
-    /* space for toggle button */
-  }
+  
 
   .chat-input-bar {
     left: 0;
