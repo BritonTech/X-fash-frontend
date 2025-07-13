@@ -354,7 +354,7 @@
 .sidebar-toggle {
   display: none;
   position: fixed;
-  top: 10px;
+  top: 12px;
   left: 10px;
   z-index: 10;
   font-size: 26px;
