@@ -5,6 +5,7 @@ import { StoreContext } from "../../Context/StoreContext";
 import EmojiPicker from "emoji-picker-react";
 import { ReactMediaRecorder } from "react-media-recorder";
 import { assets } from "../../Assets/assets";
+import UserAvatar from "../../Components/UserAvatar/UserAvatar";
 
 import { io } from "socket.io-client";
 import axios from "axios";
@@ -216,11 +217,17 @@ const ChatPage = () => {
                         className={`chat-user ${currentChat?._id === u._id ? "active" : ""}`}
                         onClick={() => selectChat(u)}
                     >
-                        <span>{u.name}</span>
-                        {onlineUsers.includes(u._id) && <span className="online-dot"></span>}
-                        {unread[u._id] && <span className="unread-badge">{unread[u._id]}</span>}
+                        <div className="chat-user-left">
+                            <UserAvatar name={u.name} size={40} />
+                        </div>
+                        <div className="chat-user-right">
+                            <span className="user-name">{u.name}</span>
+                            {onlineUsers.includes(u._id) && <span className="online-dot"></span>}
+                            {unread[u._id] && <span className="unread-badge">{unread[u._id]}</span>}
+                        </div>
                     </div>
                 ))}
+
             </div>
             <button className="sidebar-toggle" onClick={() => setSidebarOpen(prev => !prev)}>
                 ☰
