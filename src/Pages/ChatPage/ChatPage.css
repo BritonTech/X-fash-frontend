@@ -336,6 +336,23 @@
   border-radius: 3px;
   overflow: hidden;
 }
+.replying-box {
+  background: #f2f2f2;
+  padding: 6px;
+  border-left: 3px solid #4a90e2;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reply-preview {
+  background-color: #eee;
+  padding: 5px;
+  margin-bottom: 4px;
+  border-left: 3px solid #ccc;
+}
+
 
 .progress {
   height: 100%;

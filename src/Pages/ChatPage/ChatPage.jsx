@@ -32,6 +32,10 @@ const ChatPage = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [showEmojiPicker, setShowEmojiPicker] = useState(false);
 
+    // Track the message being replied to
+    const [replyTo, setReplyTo] = useState(null);
+
+
 
 
 
@@ -150,7 +154,13 @@ const ChatPage = () => {
             time: new Date(),
             fileUrl,
             fileType,
+
+            replyTo: replyTo ? { _id: replyTo._id, message: replyTo.message } : null,
+
         };
+
+        setReplyTo(null); // ✅ Clear reply state
+
 
         socketRef.current.emit("send-msg", data);
         setMessages((prev) => [...prev, data]);
@@ -211,29 +221,29 @@ const ChatPage = () => {
             <div className={`chat-sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <h2>Chats</h2>
                 <div className="user-list-scroll">
-                {allUsers.length === 0 && <div className="empty-chat">No users found</div>}
-                {allUsers.map((u) => (
-                    <div
-                        key={u._id}
-                        className={`chat-user ${currentChat?._id === u._id ? "active" : ""}`}
-                        onClick={() => selectChat(u)}
-                    >
-                        <div className="chat-user-left">
-                            <UserAvatar name={u.name} size={40} />
-                            <div className="user-info">
-                                <span className="user-name">{u.name}</span>
-                                {onlineUsers.includes(u._id) && <span className="online-dot" />}
+                    {allUsers.length === 0 && <div className="empty-chat">No users found</div>}
+                    {allUsers.map((u) => (
+                        <div
+                            key={u._id}
+                            className={`chat-user ${currentChat?._id === u._id ? "active" : ""}`}
+                            onClick={() => selectChat(u)}
+                        >
+                            <div className="chat-user-left">
+                                <UserAvatar name={u.name} size={40} />
+                                <div className="user-info">
+                                    <span className="user-name">{u.name}</span>
+                                    {onlineUsers.includes(u._id) && <span className="online-dot" />}
+                                </div>
                             </div>
+
+                            {unread[u._id] > 0 && (
+                                <div className="chat-user-right">
+                                    <span className="unread-badge">{unread[u._id]}</span>
+                                </div>
+                            )}
                         </div>
 
-                        {unread[u._id] > 0 && (
-                            <div className="chat-user-right">
-                                <span className="unread-badge">{unread[u._id]}</span>
-                            </div>
-                        )}
-                    </div>
-
-                ))}
+                    ))}
                 </div>
 
             </div>
@@ -252,7 +262,20 @@ const ChatPage = () => {
                                 <div
                                     key={idx}
                                     className={`message-bubble ${msg.senderId === user._id ? "sent" : "received"}`}
+
+                                    // ✅ Swipe to reply
+                                    onTouchStart={(e) => (e.target.startX = e.changedTouches[0].clientX)}
+                                    onTouchEnd={(e) => {
+                                        const endX = e.changedTouches[0].clientX;
+                                        if (endX - e.target.startX > 75) setReplyTo(msg); // Swipe right
+                                    }}
                                 >
+                                    {/* ✅ Show reply reference */}
+                                    {msg.replyTo && (
+                                        <div className="reply-preview">
+                                            <small>Replying to: {msg.replyTo.message}</small>
+                                        </div>
+                                    )}
                                     {msg.message && <div>{msg.message}</div>}
 
                                     {/* Show image if present */}
@@ -311,6 +334,12 @@ const ChatPage = () => {
                             </div>
                         )}
                     </div>
+                    {replyTo && (
+                        <div className="replying-box">
+                            <span>Replying to: {replyTo.message}</span>
+                            <button onClick={() => setReplyTo(null)}>❌</button>
+                        </div>
+                    )}
 
                     <input
                         type="text"
