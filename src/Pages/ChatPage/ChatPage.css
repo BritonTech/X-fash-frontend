@@ -26,7 +26,7 @@
 }
 .user-list-scroll {
   max-height: calc(100vh - 60px); /* Adjust depending on header height */
-  overflow-y: auto;
+  overflow-x: auto;
   padding-right: 5px;
 }
 
