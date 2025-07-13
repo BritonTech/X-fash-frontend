@@ -307,13 +307,14 @@ const ChatPage = () => {
                 )}
 
                 {/* Updated Chat Input Section */}
+                {replyTo && (
+                    <div className="replying-box">
+                        <span>Replying to: {replyTo.message}</span>
+                        <button onClick={() => setReplyTo(null)}>❌</button>
+                    </div>
+                )}
                 <div className="chat-input-bar">
-                    {replyTo && (
-                        <div className="replying-box">
-                            <span>Replying to: {replyTo.message}</span>
-                            <button onClick={() => setReplyTo(null)}>❌</button>
-                        </div>
-                    )}
+
                     <label className="attach-label" onClick={() => fileInputRef.current.click()}>
                         📎
                     </label>
