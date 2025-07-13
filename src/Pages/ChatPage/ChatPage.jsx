@@ -308,6 +308,12 @@ const ChatPage = () => {
 
                 {/* Updated Chat Input Section */}
                 <div className="chat-input-bar">
+                    {replyTo && (
+                        <div className="replying-box">
+                            <span>Replying to: {replyTo.message}</span>
+                            <button onClick={() => setReplyTo(null)}>❌</button>
+                        </div>
+                    )}
                     <label className="attach-label" onClick={() => fileInputRef.current.click()}>
                         📎
                     </label>
@@ -334,12 +340,7 @@ const ChatPage = () => {
                             </div>
                         )}
                     </div>
-                    {replyTo && (
-                        <div className="replying-box">
-                            <span>Replying to: {replyTo.message}</span>
-                            <button onClick={() => setReplyTo(null)}>❌</button>
-                        </div>
-                    )}
+
 
                     <input
                         type="text"
