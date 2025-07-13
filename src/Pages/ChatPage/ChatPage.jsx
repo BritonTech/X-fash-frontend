@@ -219,13 +219,19 @@ const ChatPage = () => {
                     >
                         <div className="chat-user-left">
                             <UserAvatar name={u.name} size={40} />
+                            <div className="user-info">
+                                <span className="user-name">{u.name}</span>
+                                {onlineUsers.includes(u._id) && <span className="online-dot" />}
+                            </div>
                         </div>
-                        <div className="chat-user-right">
-                            <span className="user-name">{u.name}</span>
-                            {onlineUsers.includes(u._id) && <span className="online-dot"></span>}
-                            {unread[u._id] && <span className="unread-badge">{unread[u._id]}</span>}
-                        </div>
+
+                        {unread[u._id] > 0 && (
+                            <div className="chat-user-right">
+                                <span className="unread-badge">{unread[u._id]}</span>
+                            </div>
+                        )}
                     </div>
+
                 ))}
 
             </div>
