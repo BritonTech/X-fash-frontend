@@ -208,7 +208,8 @@
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: pre-wrap;
-  column-gap:6px;          /* Allows line breaks */
+  column-gap:6px; 
+  margin-bottom: 10px; /* ✅ Adds space between bubbles */         /* Allows line breaks */
 }
 
 
