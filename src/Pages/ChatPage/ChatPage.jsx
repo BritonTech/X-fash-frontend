@@ -210,6 +210,7 @@ const ChatPage = () => {
         <div className="chat-container">
             <div className={`chat-sidebar ${sidebarOpen ? 'open' : ''}`}>
                 <h2>Chats</h2>
+                <div className="user-list-scroll">
                 {allUsers.length === 0 && <div className="empty-chat">No users found</div>}
                 {allUsers.map((u) => (
                     <div
@@ -233,6 +234,7 @@ const ChatPage = () => {
                     </div>
 
                 ))}
+                </div>
 
             </div>
             <button className="sidebar-toggle" onClick={() => setSidebarOpen(prev => !prev)}>
