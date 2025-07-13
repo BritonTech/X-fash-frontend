@@ -25,7 +25,7 @@
   z-index: 2;
 }
 .user-list-scroll {
-  max-height: calc(100vh - 60px); /* Adjust depending on header height */
+  max-height: 100vh; /* Adjust depending on header height */
   overflow-x: auto;
   padding-right: 5px;
   display: flex;
