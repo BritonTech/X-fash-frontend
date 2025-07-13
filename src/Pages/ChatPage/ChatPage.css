@@ -186,14 +186,25 @@
 }
 
 /* Messages */
-.message-bubble {
+/* .message-bubble {
   max-width: 75%;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 12px;
   background-color: #ffffff;
   word-break: break-word;
+} */
+.message-bubble {
+  display: inline-block;           /* Allow content-based width */
+  max-width: 75%;                 /* Limit max width */
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-wrap;          /* Allows line breaks */
 }
+
 
 /* .message-bubble {
   max-width: 80%;
