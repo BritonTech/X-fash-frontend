@@ -36,6 +36,16 @@
   margin-top: -240px;
   overflow: hidden;
 }
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+}
+
+.empty video.empty-animation {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
 .empty-state-text {
   font-size: 22px;
   font-weight: bold;

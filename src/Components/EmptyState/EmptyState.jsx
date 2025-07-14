@@ -1,24 +1,19 @@
 // src/components/EmptyState.js
-import React, { useEffect, useState } from 'react';
-import Lottie from 'lottie-react';
-import './EmptyState.css'
+import React from 'react';
+import './EmptyState.css';
 
-const EmptyState = ({ message, animationUrl }) => {
-  const [animationData, setAnimationData] = useState(null);
-
-  useEffect(() => {
-    const fetchAnimation = async () => {
-      const res = await fetch(animationUrl);
-      const data = await res.json();
-      setAnimationData(data);
-    };
-    fetchAnimation();
-  }, [animationUrl]);
-
+const EmptyState = ({ message }) => {
   return (
     <div className="empty-state">
       <div className="empty">
-        {animationData && <Lottie animationData={animationData} loop={true} />}
+        <video
+          src={require('../assets/empty-state.mp4')}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="empty-animation"
+        />
       </div>
       <p className="empty-state-text">{message}</p>
     </div>

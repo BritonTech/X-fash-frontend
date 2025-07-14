@@ -66,7 +66,7 @@ export const Navbar = ({ setShowLogin }) => {
       </ul>
       <div className="navbar-right">
         <Link to='/products'><img src={assets.search} alt=" Image cart product" className='logo-right' /></Link>
-        <Link to='/chat' ><img src={assets.instagram} alt="" className='logo-right'/></Link>
+        <Link to='/chat' ><img src={assets.chats} alt="" className='logo-right'/></Link>
         <Link to='/myorders'><img src={assets.black_bag} alt="" className='logo-right' /></Link>
         <div className='navbar-search-icon'>
           <Link to='/cart'><img src={assets.cart_icon} alt="" className='logo-right' /></Link>

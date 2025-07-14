@@ -28,8 +28,9 @@ import shop_bag from "./shopping-bag.png"
 import black_bag from './shop-bag.png'
 import mail from './mailing.png'
 import microphone from './mic.png'
+import chats from './chat.png'
 
- export const  assets ={cart_icon,microphone,mail,search,fash,appstore,google,youtube,instagram,tiktok,facebook,twitter,heart,phone,whatsapp,home,logo,minus,delivery,menu,cross,add,trash,profile,logout,shop_bag,black_bag};
+ export const  assets ={chats,cart_icon,microphone,mail,search,fash,appstore,google,youtube,instagram,tiktok,facebook,twitter,heart,phone,whatsapp,home,logo,minus,delivery,menu,cross,add,trash,profile,logout,shop_bag,black_bag};
 
  export const menu_list =[
     {   
