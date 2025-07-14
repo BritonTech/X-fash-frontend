@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   max-width: 100vw;
-}
+/* }
 
 .empty-state {
    box-sizing: border-box;
@@ -39,7 +39,7 @@
 .empty-state {
   text-align: center;
   padding: 2rem;
-}
+} */
 
 .empty video.empty-animation {
   max-width: 300px;
