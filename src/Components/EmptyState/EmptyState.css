@@ -24,9 +24,9 @@
 
   background-color: transparent; /* or remove the red background */
   overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  /* padding: 20px; */
+  min-height: 80vh;
+  
+  padding: 2rem;
 }
 
 .empty {
