@@ -240,6 +240,8 @@
 }
 .empty-component{
     max-height: fit-content;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 @media (max-width:750px) {
