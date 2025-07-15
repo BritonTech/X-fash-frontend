@@ -1,13 +1,14 @@
 // src/components/EmptyState.js
 import React from 'react';
 import './EmptyState.css';
+import emptysearch from '../../Assets/empty.mp4'
 
 const EmptyState = ({ message }) => {
   return (
     <div className="empty-state">
       <div className="empty">
         <video
-          src={require('../assets/empty-state.mp4')}
+          src={emptysearch}
           autoPlay
           loop
           muted
