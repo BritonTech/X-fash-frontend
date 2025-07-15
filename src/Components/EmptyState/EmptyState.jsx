@@ -9,6 +9,7 @@ const EmptyState = ({ message }) => {
       <div className="empty">
         <video
           src={emptysearch}
+          alt='empty'
           autoPlay
           loop
           muted
