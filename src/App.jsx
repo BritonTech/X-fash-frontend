@@ -29,17 +29,34 @@ const App = () => {
   const showCurrencySelector = pagesWithCurrency.includes(location.pathname);
 
 
+  // useEffect(() => {
+  //   if (location.pathname === '/') {
+  //     setShowSplash(true);
+  //     const timer = setTimeout(() => {
+  //       setShowSplash(false);
+  //     }, 5000);
+  //     return () => clearTimeout(timer);
+  //   } else {
+  //     setShowSplash(false);
+  //   }
+  // }, [location.pathname]);
+
+
   useEffect(() => {
-    if (location.pathname === '/') {
-      setShowSplash(true);
-      const timer = setTimeout(() => {
-        setShowSplash(false);
-      }, 5000);
-      return () => clearTimeout(timer);
-    } else {
+  const splashSeen = sessionStorage.getItem('splashSeen');
+
+  if (!splashSeen) {
+    setShowSplash(true);
+    const timer = setTimeout(() => {
       setShowSplash(false);
-    }
-  }, [location.pathname]);
+      sessionStorage.setItem('splashSeen', 'true');
+    }, 5000); // ⏱ your splash duration
+    return () => clearTimeout(timer);
+  } else {
+    setShowSplash(false);
+  }
+}, []);
+
 
 
   return (
