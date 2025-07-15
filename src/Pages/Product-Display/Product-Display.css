@@ -238,6 +238,9 @@
 .clear-button:hover {
     background-color: #cc0000;
 }
+.empty-component{
+    max-height: fit-content;
+}
 
 @media (max-width:750px) {
     .product-header {

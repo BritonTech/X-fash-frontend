@@ -242,10 +242,12 @@ const AllProductDisplay = () => {
                             />
                         ))
                     ) : (
+                        <div className='empty-component'>
                         <EmptyState
                             message="No matching products found. Try a different keyword or category."
                             animationUrl="https://assets6.lottiefiles.com/packages/lf20_jtbfg2nb.json"
                         />
+                        </div>
                     )}
                 </div>
             </div>
