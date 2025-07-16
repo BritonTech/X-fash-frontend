@@ -167,7 +167,7 @@ const SearchBar = ({ allProducts, onSearchResults, clearSignal }) => {
         onChange={(e) => setQuery(e.target.value)}
       />
       <img src={assets.search} className="search-icon" alt="Search" />
-      {query && (
+      {/* {query && (
         <button
           className="clear-search-btn"
           onClick={() => setQuery("")}
@@ -175,7 +175,7 @@ const SearchBar = ({ allProducts, onSearchResults, clearSignal }) => {
         >
           ❌
         </button>
-      )}
+      )} */}
     </div>
   );
 };
