@@ -272,11 +272,12 @@
 }
 
 /* Chat Input Bar (Fixed to bottom) */
-.chat-input-bar {
+.chatpage-input-bar {
   display: flex;
   align-items: center;
   /* width:calc(100% - 250px); */
-  min-width: 100%;
+  width: 78%;
+  /* min-width: 100%; */
   gap: 10px;
   position: fixed;
   padding: 10px;

@@ -313,7 +313,7 @@ const ChatPage = () => {
                         <button onClick={() => setReplyTo(null)}>❌</button>
                     </div>
                 )}
-                <div className="chat-input-bar">
+                <div className="chatpage-input-bar">
 
                     <label className="attach-label" onClick={() => fileInputRef.current.click()}>
                         📎
