@@ -11,7 +11,7 @@ const ProductDetails = () => {
   const product = all_product.find((item) => item._id === id);
 
   if (!product) {
-    return <div style={{ padding: 20 }}>Product not found</div>;
+    return <div style={{ padding: 20,flex:1,justifyContent:"center",alignContent:"center" }}>Product not found</div>;
   }
 
   return (
