@@ -186,8 +186,9 @@
 }
 
 @media (max-width:1050px) {
-    .navbar .logo {
+    .navbar .nav-logo {
         width: 140px;
+        height: fit-content;
     }
 
     .navbar-menu {
@@ -230,8 +231,9 @@
         /* gap: 20px; */
     }
 
-    .navbar .logo {
+    .navbar .nav-logo {
         width: 120px;
+        height: fit-content;
     }
 
     .navbar-menu {
@@ -263,6 +265,7 @@
 
     .navbar .logo {
         width: 60px;
+        height: fit-content;
     }
 
     .navbar .logo-right {
