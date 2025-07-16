@@ -460,7 +460,7 @@
     overflow-y: auto;
     padding: 10px;
   }.user-list-scroll {
-margin-bottom: 20px;
+margin-bottom: 70px;
 }
 
   .chat-sidebar.open {
@@ -510,11 +510,12 @@ margin-bottom: 20px;
     height: 100vh;
   }
 
-  .chat-input-bar {
+  .chatpage-input-bar {
     display: flex;
     align-items: center;
     /* width:calc(100% - 250px); */
     min-width: 100vw;
+    width: 100%;
     gap: 2px;
     position: absolute;
     padding: 4px;
