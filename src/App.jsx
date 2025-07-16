@@ -18,6 +18,7 @@ import SplashScreen from './Components/SplashScreen/SplashScreen';
 import ChatPage from './Pages/ChatPage/ChatPage';
 import WhatsAppFormPage from './Pages/WhatsAppFormPage/WhatsAppFormPage';
 import CurrencySelector from './Components/CurrencySelector/CurrencySelector';
+import ProductDetails from './Pages/ProductDetails/ProductDetails';
 
 const App = () => {
 
@@ -83,6 +84,7 @@ const App = () => {
             <Route path='/myorders' element={<MyOrders />} />
             <Route path='/chat' element={<ChatPage />} />
             <Route path='/whatsapp-order' element={<WhatsAppFormPage />} />
+             <Route path="/product/:id" element={<ProductDetails />} />
           </Routes>
         </div>
       )}

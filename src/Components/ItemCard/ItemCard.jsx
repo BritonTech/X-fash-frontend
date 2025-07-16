@@ -8,25 +8,26 @@ import Price from '../Price/Price'
 
 const ItemCard = ({ id, name, old_price, new_price, description, image, category }) => {
 
-{}    const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext)
- {}   return (
-      <div className='item-card'>
-  {}          <div className="item-card-img-container">
-   {}             <img src={image} alt="" className="item-card-image" />
-
+    const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext)
+    return (
+        <div className='item-card'>
+            { }          <div className="item-card-img-container">
+                <Link to={`/product/${id}`}>
+                    <img src={image} alt="" className="item-card-image" />
+                </Link>
                 {!cartItems[id]
                     ? <div className='item-card-add' onClick={() => addToCart(id)}>
                         <p>ADD TO CART</p>
-                        <img className='add'  src={assets.cart_icon} />
-                        </div>
+                        <img className='add' src={assets.cart_icon} />
+                    </div>
                     : <div className='item-card-cart-product'>
                         <div className='item-card-cart'>
                             <Link to='/cart'><p>CART</p></Link>
                         </div>
                         <div className='item-card-counter'>
-                        <img onClick={() => removeFromCart(id)} src={assets.minus} alt="" className='remove-from-cart' />
-                        <p>{cartItems[id]}</p>
-                        <img onClick={() => addToCart(id)} src={assets.add} alt="" className='add-to-cart' />
+                            <img onClick={() => removeFromCart(id)} src={assets.minus} alt="" className='remove-from-cart' />
+                            <p>{cartItems[id]}</p>
+                            <img onClick={() => addToCart(id)} src={assets.add} alt="" className='add-to-cart' />
                         </div>
 
                     </div>
@@ -40,7 +41,7 @@ const ItemCard = ({ id, name, old_price, new_price, description, image, category
                 {/* <p className="item-card-description">{description}</p> */}
                 <div className="item-card-price">
                     <p className="item-card-new-price"> New Price:<br />  <Price amountInKES={new_price} /></p>
-                    <p className="item-card-old-price">Old Price:<br />  <Price amountInKES={old_price} /></p>
+                    <p className="item-card-old-price">Old Price:<br /> <s> <Price amountInKES={old_price} /> </s></p>
                 </div>
 
             </div>
