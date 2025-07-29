@@ -193,7 +193,7 @@ export const PlaceOrder = () => {
               </div>
 
             </div>
-            <button type='submit' >PLACE ORDER</button>
+            <button type='submit' className='place-order-button' >PLACE ORDER</button>
           </div>
 
 

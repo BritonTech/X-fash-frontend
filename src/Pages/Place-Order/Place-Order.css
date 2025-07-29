@@ -97,5 +97,15 @@
     font-weight: 600;
     margin-bottom: 10px;
 }
+.place-order .cart-total button {
+    margin-top: 30px;
+    background-color: rgb(18, 175, 18);
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: 9px;
+    cursor: pointer;
+    padding: 12px 0px;
+}
 
 }
