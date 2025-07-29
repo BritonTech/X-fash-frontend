@@ -24,7 +24,7 @@
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     margin-top: 30px;
     gap: 30px;
-    row-gap: 50px;
+    row-gap: 10px;
 
 }
 
@@ -211,6 +211,7 @@
     border: 1px solid transparent;
     user-select: none;
 }
+
 
 /* Hover state */
 .category-item:hover {

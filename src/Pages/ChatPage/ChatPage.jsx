@@ -213,6 +213,8 @@ const ChatPage = () => {
 
 
     useEffect(() => {
+        console.log("🔍 Fetching messages between", user?._id, "and", chatUser?._id);
+
         messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
     }, [messages]);
 
