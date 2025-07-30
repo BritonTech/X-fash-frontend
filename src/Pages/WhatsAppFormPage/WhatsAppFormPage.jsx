@@ -92,7 +92,7 @@ const WhatsAppFormPage = () => {
                     options={all_product.map((p, i) => ({
                         value: p.name || p.title || `Product ${i}`,
                         label: p.name || p.title || `Unnamed Product ${i + 1}`,
-                        image: `${url}/images/${p.image}`, // assuming your product has an image field like p.image
+                        image: p.image, // assuming your product has an image field like p.image
                     }))}
                     formatOptionLabel={({ label, image }) => (
                         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
