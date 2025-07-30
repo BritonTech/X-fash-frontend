@@ -45,7 +45,7 @@ const CurrencySelector = () => {
     <div className={`currency-selector-fixed ${showSelector ? 'selector--visible' : 'selector--hidden'}`}>
       <select value={selectedCurrency.code} onChange={handleChange}>
         {currencies.map((c) => (
-          <option key={c.code} value={c.code}>
+          <option key={c.code} value={c.code} className='currency-selector-option'>
             {c.flag} {c.name} ({c.code})
           </option>
         ))}
