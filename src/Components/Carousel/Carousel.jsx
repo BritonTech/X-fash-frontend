@@ -32,7 +32,7 @@ const Carousel = () => {
   if (!carouselImages || carouselImages.length === 0) {
     return <div className="carousel-loading">Loading Carousel...</div>;
   }
-  console.log("carouselImages", carouselImages);
+  // console.log("carouselImages", carouselImages);
 
   return (
     <div

@@ -55,7 +55,7 @@ const Verify = () => {
     try {
       const response = await axios.post(`${url}/api/order/verify`, { success, orderId },{headers:{token}});
 
-      console.log("Verification response:", response.data); // ✅ Check response
+      // console.log("Verification response:", response.data); // ✅ Check response
 
       if (response.data.success) {
         navigate("/myorders"); // ✅ Navigate to orders

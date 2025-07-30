@@ -80,8 +80,8 @@ export const PlaceOrder = () => {
   //  }
   const placeOrder = async (event) => {
     event.preventDefault();
-    console.log("PLACE ORDER clicked");
-    console.log("product_list:", product_list);
+    // console.log("PLACE ORDER clicked");
+    // console.log("product_list:", product_list);
     if (!all_product) {
       alert("Product list not loaded. Please try again.");
       return;
@@ -117,7 +117,7 @@ export const PlaceOrder = () => {
         headers: { token }
       });
 
-      console.log("Server response:", response.data);
+      // console.log("Server response:", response.data);
 
       if (response.data.success) {
         toast.success(response.data.message)

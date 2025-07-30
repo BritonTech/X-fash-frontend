@@ -10,7 +10,7 @@ const WhatsAppFormPage = () => {
     const location = useLocation();
     const { all_product,url } = useContext(StoreContext); // ✅ Use global context
 
-    console.log(all_product);
+    // console.log(all_product);
 
 
     const [form, setForm] = useState({
