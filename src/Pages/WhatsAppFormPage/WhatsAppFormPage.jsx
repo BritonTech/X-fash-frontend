@@ -50,7 +50,7 @@ const WhatsAppFormPage = () => {
         <div className="order-page">
             <div className="order-form">
                 <div className='whatsapp-order-hearder'>
-                    <h2 className='whatsapp-order-header-text'>Place Your Order⤵️</h2>
+                    <h2 className='whatsapp-order-header-text'>Place Your Order ⤵️</h2>
                 </div>
                 <input name="name" placeholder="Your Name" value={form.name} onChange={handleChange} />
                 <input name="address" placeholder="Your Address" value={form.address} onChange={handleChange} />
