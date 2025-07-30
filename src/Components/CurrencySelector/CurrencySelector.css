@@ -1,7 +1,7 @@
 .currency-selector-fixed {
   position: fixed;
   top: 80px;
-  right: 2px;
+  left: 2px;
   z-index: 9999;
   background-color: white;
   border: 1px solid #ccc;
@@ -33,7 +33,7 @@
  .currency-selector-fixed {
   position: fixed;
   top: 50px;
-  right: 2px;
+  left: 2px;
   z-index: 9999;
   background-color: white;
   border: 1px solid #ccc;
@@ -50,7 +50,7 @@
 
 /* When hidden (scrolling down) */
 .selector--hidden {
-  transform: translateY(10px); /* Push it out of view */
+  transform: translateY(1px); /* Push it out of view */
   opacity: 0;
 }
  
